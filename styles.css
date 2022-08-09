@@ -112,6 +112,10 @@ p {
   display: flex;
   flex-wrap: wrap;
 }
+.courses-cards card {
+  display: flex;
+  width: 240px;
+}
 /* media-queries */
 
 @media (max-width: 700px) {
