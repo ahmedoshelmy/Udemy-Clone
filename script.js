@@ -50,30 +50,34 @@ window.onload = function () {
     new_card.appendChild(author);
 
     //Creating Rating Div
-    const new_div = document.createElement("div");
-    new_card.appendChild(new_div);
+    new_card.appendChild(addRating(data[i].rating));
   }
 
   function addRating(rating) {
+    rating = Math.round(rating * 10) / 10;
     const div = document.createElement("div");
     const span1 = document.createElement("span");
     span1.textContent = rating;
     span1.classList.add("stars");
     div.appendChild(span1);
-    // for(let i = 0;i<4;i++){
-    //     const span = document.createElement('span') ;
-    //     span.classList.add("bi bi-star-fill");
-    //     div.appendChild(span);
-    // }
+    for (let i = 0; i < 4; i++) {
+      const span = document.createElement("span");
+      span.classList.add("bi");
+      span.classList.add("bi-star-fill");
+      div.appendChild(span);
+    }
     const span = document.createElement("span");
-    // span.classList.add("fa fa-star-half-full stars");
+    span.classList.add("fa");
+    span.classList.add("fa-star-half-full");
+    span.classList.add("stars");
     div.appendChild(span);
     return div;
   }
   function search(value) {
     old_section.innerHTML = "";
     for (let i = 0; i < data.length; i++) {
-      let title = data[i].title;
+      let title = data[i].title.toLowerCase();
+      value = value.toLowerCase();
       if (title.indexOf(value) != -1) {
         createElement(i);
         console.log(i);
