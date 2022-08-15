@@ -117,8 +117,10 @@ ul {
 }
 .courses-description {
   margin-top: 10px;
+  display: flex;
   margin-bottom: 0px;
   max-width: 630px;
+  display: flex;
 }
 p {
   font-size: small;
@@ -137,6 +139,13 @@ p {
 }
 s {
   text-decoration: line-through;
+}
+.course-img {
+  width: 200px;
+  height: 120px;
+}
+.course-caption {
+  max-width: 200px;
 }
 /* media-queries */
 
@@ -267,7 +276,7 @@ s {
   .courses p {
     font-size: 0.5rem;
   }
-  .courses-desc {
+  .courses-description {
     width: 100%;
   }
   .above-courses {
