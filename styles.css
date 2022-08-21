@@ -1,7 +1,6 @@
 /* all */
 * {
   padding: 1px;
-  margin: 2px;
   border: none;
   font-family: sans-serif;
   text-decoration: none;
@@ -67,11 +66,11 @@ div button {
   margin: auto;
   padding: 1rem 2rem;
 }
-.card {
+/* .card {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
   padding: 10px;
   background-color: white;
-}
+} */
 .head-bar {
   background-color: white;
   width: 30rem;
@@ -134,9 +133,9 @@ p {
 .courses-cards card {
   display: flex;
 }
-.card-img {
+/* .card-img {
   width: 80%;
-}
+} */
 s {
   text-decoration: line-through;
 }
@@ -302,4 +301,135 @@ s {
   .courses-categories {
     justify-content: center;
   }
+}
+
+/* Courses 2  */
+
+/*
+  Contains courses section styling
+*/
+.career-title {
+  margin: 0;
+}
+
+.courses-paragraph {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  margin-bottom: 1.6rem;
+  max-width: 50rem;
+}
+
+.courses-section {
+  border: 1px solid #d1d7dc;
+  padding: 1.5rem;
+}
+
+.courses-list {
+  display: flex;
+  overflow: hidden;
+  width: auto;
+}
+
+.course-item {
+  margin-right: 20px;
+  font-weight: bold;
+  color: #6a6f73;
+}
+
+.active {
+  color: black;
+}
+
+.course {
+  width: 240px;
+  margin: 2rem 0;
+}
+
+.course-title {
+  margin: 0.5rem 0;
+}
+
+.course-instructor {
+  color: #6a6f73;
+  margin: 0;
+  font-size: 13px;
+}
+
+.course-students {
+  color: #6a6f73;
+  margin: 0;
+  font-size: 13px;
+  display: inline;
+  font-weight: lighter;
+}
+
+.stars {
+  margin: 0.5rem 0 0.5rem 0;
+  color: #e59819;
+  font-weight: bold;
+}
+
+.courses {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.course-discount {
+  color: #6a6f73;
+  margin: 0;
+  font-size: 13px;
+  display: inline;
+  font-weight: lighter;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.course-price {
+  margin: 0.5rem 0;
+  display: inline-block;
+}
+.course-rate {
+  color: #b4695b;
+  font-style: normal;
+}
+
+.best-seller {
+  background-color: #eceb98;
+  color: #3d3c0a;
+}
+
+.best-seller {
+  display: block;
+  width: fit-content;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  border: 1px solid #6a6f73;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+  background-color: #1c1d1f;
+  height: 3em;
+  width: 3em;
+  border-radius: 100%;
+  margin: auto;
+}
+
+.course-item:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.explore:hover {
+  background-color: beige;
+}
+a {
+  text-decoration: none;
 }

@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <meta charset="utf-8" />
   </head>
   <body>
@@ -61,116 +62,46 @@
   </header>
 
     <!-- Courses Section  -->
-    <section class = "courses-section" >
-      <h1>A broad selection of courses</h1>
-      <p>Choose from 185,000 online video courses with new additions published every month</p>
-      <div class = "courses-categories" > 
-        <ul>
-          <li>Python</li>
-          <li>Excel</li>
-          <li>Web development</li>
-          <li>Javascript</li>
-          <li>Data science</li>
-          <li><span>AWS</span> certification</li>
-          <li>Drawing</li>
-      </ul>
-      </div>
-      <div class="card courses"> 
-        <h3 class="courses-description">Expand your career opportunities with Python</h3>
-        <p class="courses-description">
-            Take one of Udemy's range of Python courses and learn how to code using this incredibly useful language. Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. You'll learn how to build everything
-            from games to sites to apps. Choose from a range of courses that will appeal to
-        </p>
-        <button type="button" class="white-button">Explore Python</button>
-      <div class="courses-cards" id = "courses-cards-section">
-        <div class="course">
-            <div class="card-img">
-                <img class = "course-img" src="https://img-c.udemycdn.com/course/240x135/394676_ce3d_5.jpg" alt="python" />
-            </div>
-            <h4 class="course-caption">Learn Python: The Complete Python Programming Course</h4>
-            <p class="author">Avinash Jain, The Codex</p>
-            <div class="rating">
-                <span class="stars">4.4</span>
-                <span class="bi bi-star-fill"></span>
-                <span class="bi bi-star-fill"></span>
-                <span class="bi bi-star-fill"></span>
-                <span class="bi bi-star-fill"></span>
-                <span class="bi bi-star-half"></span>
-                <span class="grey">(17.972)</span>
-            </div>
-            <span class="price">E£199.99 <s>E£679.99</s></span>
-        </div>
-        <div class="course">
-          <div class="card-img">
-              <img class = "course-img" src="https://img-c.udemycdn.com/course/240x135/396876_cc92_7.jpg" alt="python" />
-          </div>
-          <h4 class="course-caption">Learning Python for Data Analysis  and Visualization</h4>
-          <p class="author">Jose Portilla</p>
-          <div>
-              <span class="stars">4.4</span>
-              <span class="fa fa-star stars"></span>
-              <span class="fa fa-star stars"></span>
-              <span class="fa fa-star stars"></span>
-              <span class="fa fa-star stars"></span>
-              <span class="fa fa-star-half-full stars"></span>
-              <span class="grey">(17.984)</span>
-          </div>
-          <span class="price">E£269.99 <s>E£1.599.99</s></span>
-      </div>
-      <div class="course">
-          <div class="card-img">
-              <img class = "course-img" src="https://img-c.udemycdn.com/course/240x135/405878_e5a0_3.jpg" alt="python" />
-          </div>
-          <h4 class="course-caption">Python for Beginners -Learn Programming from scratch</h4>
-          <p class="author">Edwin Diaz, Coding Faculty Solutions</p>
-          <div>
-              <span class="stars">4.4</span>
-              <span class="fa fa-star stars"></span>
-              <span class="fa fa-star stars"></span>
-              <span class="fa fa-star stars"></span>
-              <span class="fa fa-star stars"></span>
-              <span class="fa fa-star-half-full stars"></span>
-              <span class="grey">(1.747)</span>
-          </div>
-          <span class="price">E£269.99 <s>E£1.599.99</s></span>
-      </div>
-      <div class="course">
-          <div class="card-img">
-              <img class = "course-img" src="https://img-c.udemycdn.com/course/240x135/426570_1b91_3.jpg" alt="python" />
-          </div>
-          <h4 class="course-caption">Learn Python: Python for Beginners</h4>
-          <p class="author">Abrar Hussain</p>
-          <div>
-              <span class="stars">4.2</span>
-              <span class="fa fa-star stars"></span>
-              <span class="fa fa-star stars"></span>
-              <span class="fa fa-star stars"></span>
-              <span class="fa fa-star stars"></span>
-              <span class="fa fa-star-half-full stars"></span>
-              <span class="grey">(2.761)</span>
-          </div>
-          <span class="price">E£199.99 <s>E£679.99</s></span>
-      </div>
-  <div class="course">
-    <div class="card-img">
-        <img class = "course-img" src="https://img-c.udemycdn.com/course/240x135/449532_2aa9_7.jpg" alt="python" />
-    </div>
-    <h4 class="course-caption">Python Beyond the Basics -  Object-Oriented Programming</h4>
-    <p class="author">Infinite Skills</p>
     <div>
-        <span class="stars">4.4</span>
-        <span class="fa fa-star stars"></span>
-        <span class="fa fa-star stars"></span>
-        <span class="fa fa-star stars"></span>
-        <span class="fa fa-star stars"></span>
-        <span class="fa fa-star-half-full stars"></span>
-        <span class="grey">(2.928)</span>
-    </div>
-    <span class="price">E£199.99 <s>E£519.99</s></span>
-</div>
-</div>
+      <ul class="courses-list">
+          <li class="course-item active">Python</li>
+          <li class="course-item">Excel</li>
+          <li class="course-item">Web development</li>
+          <li class="course-item">Javascript</li>
+          <li class="course-item">Data science</li>
+          <li class="course-item">AWS Certification</li>
+          <li class="course-item">Drawing</li>
+      </ul>
+      <section class="courses-section">
 
-      </div>
+          <div>
+              <h2 class="career-title">Expand your career opportunities with Python</h2>
+              <p class="courses-paragraph">Take one of Udemy’s range of Python courses and learn how to code using
+                  this incredibly useful language. Its simple
+                  syntax and readability makes Python perfect for Flask, Django, data science, and machine
+                  learning.
+                  You’ll learn how to
+                  build everything from games to sites to apps. Choose from a range of courses that will appeal to
+                  both beginners and
+                  advanced developers alike.</p>
+              <button class="my-btn explore">Explore Python</button>
+          </div>
+
+
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner" id="courses"></div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+      </section>
       <!-- Categories Section  -->
     
       <section>
@@ -228,6 +159,7 @@
           </div>
         </div>
       </section>
+      <script src="script.js"></script>
 
   </body>
 </html>
